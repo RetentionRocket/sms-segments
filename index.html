@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SMS Calculator</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <script src="js/gsm.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <h1> SMS Length Calculator </h1>
+        <div class="sms-length-calculator">
+            <div class="content-block">
+                <h2>Insert Message Content:</h2>
+                <div class="calc-row">
+                    <textarea id="sms-text" placeholder="Type your SMS content here"></textarea>
+                    <table class="table sms-calculator-summary">
+                        <tbody>
+                            <tr>
+                                <th>Encoding</th>
+                                <td id="smslc-encoding">7bit</td>
+                            </tr>
+                            <tr>
+                                <th>SMS Parts</th>
+                                <td id="smslc-parts">1</td>
+                            </tr>
+                            <tr>
+                                <th>Chars used</th>
+                                <td id="smslc-characters">0</td>
+                            </tr>
+                            <tr>
+                                <th>Chars in SMS</th>
+                                <td id="smslc-characters-sms">160</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="content-block">
+                <h2>Detailed View:</h2>
+                <div id="sms-parts-container">
+
+                </div>
+            </div>
+            <div class="content-block legend">
+                <h2> Legend </h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><span class="c7b"></span></td>
+                            <td><span style="margin: 0px 10px;"> - </span></td>
+                            <td>Regular 7bit character, present in GSM charset<br></td>
+                        </tr>
+                        <tr>
+                            <td><span class="c7eb"></span></td>
+                            <td><span style="margin: 0px 10px;"> - </span></td>
+                            <td style="display: flex; align-items: center;">Symbol in GSM charset that is counted as 2 characters. <span class="c7b">|</span><span class="c7b">^</span><span class="c7b">€</span><span class="c7b">{</span><span class="c7b">}</span><span class="c7b">[</span><span class="c7b">]</span><span class="c7b">~</span> characters<br></td>
+                        </tr>
+                        <tr>
+                            <td><span class="c16b"></span></td>
+                            <td> - </td>
+                            <td>Character encoded as Unicode character<br></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="js/smssplit.js"></script>
+</body>
+</html>
