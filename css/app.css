@@ -1,0 +1,90 @@
+.calc {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sms-length-calculator {
+    border: 1px solid rgba(42,42,46,0.15);
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 5px 9px -3px rgba(1,87,155,0.15);
+    padding-top: 30px;
+}
+
+.content-block {
+    padding: 0 30px 30px 30px;
+}
+
+.calc-row {
+    display: flex;
+    align-items: center;
+}
+
+#sms-text {
+    border: 1px solid rgba(42,42,46,0.2);
+    border-radius: 5px;
+    background-color: rgba(242,251,255,0.5);
+    box-shadow: none;
+    min-height: 130px;
+    color: #2a2a2e;
+    font-size: 16px;
+    line-height: 26px;
+    width: 50%;
+    margin-right: 50px;
+    outline: none;
+}
+
+.sms-calculator-summary th {
+    display: table-cell;
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    line-height: 26px;
+    text-align: left;
+    width: 160px;
+}
+
+.c7b {
+    display: inline-block;
+    width: 24px;
+    height: 31px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 3px;
+    margin: 0;
+    line-height: 30px;
+    vertical-align: top;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.c7eb {
+    display: inline-block;
+    width: 24px;
+    height: 31px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0;
+    line-height: 30px;
+    vertical-align: top;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #fea;
+    font-size: 10px;
+}
+
+.c16b {
+    display: inline-block;
+    width: 24px;
+    height: 31px;
+    text-align: center;
+    background-color: #8eba33;
+    border-radius: 3px;
+    margin: 0;
+    line-height: 30px;
+    vertical-align: top;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
